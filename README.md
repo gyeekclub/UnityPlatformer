@@ -11,3 +11,10 @@ More info at the event's meetup.com page: http://www.meetup.com/Szeged-GYEEK-Clu
 Feel free to ask questions or send pull requests. 
 This project will be used as a starting point at our Game Developer Hackathon in December 2016.
 More info: http://www.meetup.com/Szeged-GYEEK-Club/events/234987737/
+
+### Assets used in the project
+Platform: http://opengameart.org/content/platform-2d
+
+Background: https://s-media-cache-ak0.pinimg.com/originals/cc/46/7c/cc467caf4418d54c05d44b4ee7e41ced.png
+
+Character:  http://opengameart.org/content/fat-bird-sprite-sheets-for-gamedev
