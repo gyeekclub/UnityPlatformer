@@ -12,6 +12,13 @@ Feel free to ask questions or send pull requests.
 This project will be used as a starting point at our Game Developer Hackathon in December 2016.
 More info: http://www.meetup.com/Szeged-GYEEK-Club/events/234987737/
 
+## How to run
+* Clone this project
+* Start Unity
+* Open
+* Select the project's folder
+* On the Project tab double click on the Level1 scene
+
 ### Assets used in the project
 Platform: http://opengameart.org/content/platform-2d
 
