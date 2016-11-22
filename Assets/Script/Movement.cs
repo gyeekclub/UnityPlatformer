@@ -12,14 +12,27 @@ public class Movement : MonoBehaviour {
 
     private bool facingRight;
 
+	private Animator anim;
+
+	private Transform groundChecker;
+	private bool grounded;
+
+	[SerializeField]
+	private LayerMask groundLayer;
+
     // Use this for initialization
     void Start() {
-
+		
+		grounded = true;
         // Initially our character is facing right
         facingRight = true;
 
         // Our character's RigidBody
         myRigidBody = GetComponent<Rigidbody2D>();
+
+		anim = GetComponent<Animator> ();
+
+		groundChecker = transform.FindChild ("GroundChecker");
 
     }
 
@@ -30,11 +43,20 @@ public class Movement : MonoBehaviour {
         // the right arrow on a keyboard or right controller stick on an Xbox controller
         float horizontal = Input.GetAxis("Horizontal");
 
+		anim.SetFloat ("Speed", Mathf.Abs(horizontal));
+		anim.SetBool ("Grounded", grounded);
+
+		groundCheck ();
+
         HandleMovement(horizontal);
         Facing(horizontal);
         Jump();
 
     }
+
+	private void groundCheck(){
+		grounded = Physics2D.Raycast (groundChecker.position,Vector2.down,0.1f,groundLayer);
+	}
 
     private void HandleMovement(float horizontal)
     {
