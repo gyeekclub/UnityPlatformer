@@ -47,6 +47,7 @@ public class Movement : MonoBehaviour {
 		anim.SetBool ("Grounded", grounded);
 
 		groundCheck ();
+		FatalFall ();
 
         HandleMovement(horizontal);
         Facing(horizontal);
@@ -54,6 +55,13 @@ public class Movement : MonoBehaviour {
 
     }
 
+	// If the character's y coordinate drops below -7, gameover function is called
+	private void FatalFall(){
+		if (transform.position.y < -7)
+			GameOver.gameOver ();
+	}
+
+	// Checking if the character is on ground
 	private void groundCheck(){
 		grounded = Physics2D.Raycast (groundChecker.position,Vector2.down,0.1f,groundLayer);
 	}
@@ -84,7 +92,7 @@ public class Movement : MonoBehaviour {
         private void Jump() {
 
         // If we press the Space button
-        if (Input.GetKeyDown(KeyCode.Space)) {
+		if (Input.GetKeyDown(KeyCode.Space) && grounded) {
 
             // Our character will jump by jumpHeight height
             myRigidBody.velocity = new Vector2(myRigidBody.velocity.x, jumpHeight);
