@@ -1,16 +1,14 @@
 # UnityPlatformer
 Basic Unity project for a side-scrolling platformer game.
 
-It includes a character without animation, which can move and jump along the scene. 
-There is a platform and a background that have polling implemented as the character moves forward. 
-And the camera will follow the character.
+It includes an animated character that can jump on platforms and collect coins. A simple enemy is roaming on a platform and kills the character if it touches it.
 
-It made by Denisz Kaslik on our free Unity Basics workshop as a pre-hack event of our Game Developer Hackathon.
-More info at the event's meetup.com page: http://www.meetup.com/Szeged-GYEEK-Club/events/234447158/
+It made by Denisz Kaslik and Mark Marcikic on our free Unity pre-hack workshops for our Game Developer Hackathon.
+More info at the event's website: http://www.meetup.com/szeged-gyeek-club/
 
 Feel free to ask questions or send pull requests. 
 This project will be used as a starting point at our Game Developer Hackathon in December 2016.
-More info: http://www.meetup.com/Szeged-GYEEK-Club/events/234987737/
+More info: http://gamedevhack.szegedgyeekclub.hu/
 
 ## How to run
 * Clone this project
@@ -23,5 +21,3 @@ More info: http://www.meetup.com/Szeged-GYEEK-Club/events/234987737/
 Platform: http://opengameart.org/content/platform-2d
 
 Background: https://s-media-cache-ak0.pinimg.com/originals/cc/46/7c/cc467caf4418d54c05d44b4ee7e41ced.png
-
-Character:  http://opengameart.org/content/fat-bird-sprite-sheets-for-gamedev
