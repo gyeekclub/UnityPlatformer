@@ -4,6 +4,8 @@ Basic Unity project for a side-scrolling platformer game.
 It includes an animated character that can jump on platforms and collect coins. A simple enemy is roaming on a platform and kills the character if it touches it.
 
 Azure Mobile App support is added, check out the Service project: https://github.com/SzegedGYEEKClub/UnityPlatformerService
+Based on the demo project in the Unity3d Azure App Service repository: https://github.com/Unity3dAzure/AppServicesDemo
+Unity App Service SDK: https://github.com/Unity3dAzure/AppServices
 
 It made by Denisz Kaslik and Mark Marcikic on our free Unity pre-hack workshops for our Game Developer Hackathon.
 More info at the event's website: http://www.meetup.com/szeged-gyeek-club/
